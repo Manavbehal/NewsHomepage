@@ -1,0 +1,275 @@
+*{
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+
+}
+
+
+.navbar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.navbar li:hover{
+color:hsl(35, 77%, 62%);
+
+}
+
+.mainimage{
+    margin-left: 80px;
+    
+}
+
+.listitems{
+    display: flex;
+    
+    margin-left: 370px;
+    
+}
+
+li{
+    margin: 0px 10px;
+    font-weight: 400;
+    color:hsl(233, 8%, 79%);
+}
+
+.imagedekstop{
+    margin: 48px 235px;
+}
+
+.contianerwith3{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.heading{
+    width: 270px;
+    height: 220px;
+   
+    margin-top: -40px;
+}
+
+.para{
+    width: 350px;
+    height: 220px;
+   
+    margin:-22px 100px
+}
+
+.contianerwith2{
+    display: flex;
+    margin-left: 235px;
+}
+
+.button{
+    width: 200px;
+    height: 45px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: white;
+    background-color: hsl(5, 85%, 63%);
+    border-style: none;
+    margin-top: 35px;
+}
+
+.leftnews{
+    border: 2px solid black;
+    width:330px;
+    height: 515px;
+    position: absolute;
+    right:170px;
+    top: 110px;
+    background-color: hsl(240, 100%, 5%);
+    color:white;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    
+}
+
+.contianerfornews{
+    display: flex;
+   
+   
+}
+
+.headingnews{
+    color:hsl(35, 77%, 62%);
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.innews{
+    font-size: 18px;
+    font-weight: 900;
+    cursor: pointer;
+    
+}
+
+.innews:hover{
+ color:hsl(35, 77%, 62%);
+}
+
+.inpara{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+hr{
+    margin: 30px 0px;
+}
+
+.margintop{
+    margin-top: 30px;
+}
+
+
+.bottomcontainer{
+   
+    display: flex;
+    justify-content: space-between;
+    margin-left: 235px ;
+    width:74%;
+    margin-top: 40px;
+}
+
+
+.cardsimage{
+    width:100px;
+    height: 130px;
+    
+}
+
+.cards{
+    display: flex;
+}
+
+.heading1cards{
+    color:hsl(236, 13%, 42%);
+    font-weight: 600;
+    opacity: 0.4;
+    font-size: 30px;
+}
+
+.heading2cards{
+    color: black;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.heading2cards:hover{
+    color: hsl(5, 85%, 63%);
+}
+
+.paracards{
+    color:hsl(236, 13%, 42%);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.cardscontent{
+    line-height: 20px;
+    padding: 0px 10px;
+    margin-left: 15px;
+
+}
+
+.cardsimage1{
+    margin-top: 10px;
+    margin-left:20px;
+}
+
+.attribution{
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.mainimage{
+    display: none;
+}
+
+
+@media screen and (max-width: 376px) {
+    .contianerwith3{
+      margin-left: -223px; 
+        
+    }
+
+    .contianerfornews{
+        height:1375px;
+        display: block;
+    }
+
+    .contianerwith2{
+        display: block;
+    }
+
+    .bottomcontainer{
+        display: block;
+        margin-left: -13px;
+    }
+    
+    .leftnews {
+        position: static; 
+        margin-top: 20px; 
+        margin-left: 0px;
+    }
+
+    .para{
+        margin-left: 0px;
+    }
+
+    .imagedekstop{
+        width:345px;
+    }
+
+    .mainimage{
+        margin-left:2px;
+    }
+
+    .container {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    
+    .listitems {
+        position: fixed;
+        top: 0;
+        left: -214px; /* Move the list items off-screen initially */
+        width: 200px; /* Set the width of the sidebar */
+        height: 100vh; /* Set the height to cover the entire viewport */
+        background-color: white; /* Adjust background color as needed */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000; /* Ensure it's above other content */
+        transition: left 0.3s ease; /* Add transition for smooth animation */
+    }
+
+    /* Adjust styles for open state */
+    .listitems.open {
+        left: 0; /* Move the sidebar into view */
+    }
+
+    /* Hide the list items by default */
+    .listitems {
+        display: none;
+    }
+
+    /* Adjust styles for the menu icon */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Adjust styles for the list items when open */
+    .navbar.open .listitems {
+        display: flex;
+    }
+  }
